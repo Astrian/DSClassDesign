@@ -24,6 +24,7 @@ typedef struct dataNode{ //数据节点
 
 typedef struct datalink{ //数据链式表
     dataNode *head; //首节点指针
+    dataNode *tail; //尾节点指针
 }datalink;
 
 /*
@@ -62,7 +63,7 @@ void freeStack(stack* StackWillBeFree){
     free( StackWillBeFree -> tail );
 }
 
-void push(stack* StackWillBeAdd, dataNode x){
+void pushStack(stack* StackWillBeAdd, dataNode x){
     stackNode* StackNode;
     StackNode = malloc(sizeof(stackNode));
     StackNode -> data = &x;
@@ -71,7 +72,7 @@ void push(stack* StackWillBeAdd, dataNode x){
     StackWillBeAdd -> head -> status = 0;
 }
 
-double pop(stack* StackWillBePop){
+double popStack(stack* StackWillBePop){
     stackNode* StackNode;
     double returnDN;
     StackNode = StackWillBePop -> head -> next -> next;
@@ -82,20 +83,14 @@ double pop(stack* StackWillBePop){
 }
 
 /*
- *新增链表数据
+ *增加链表元素
  */
-datalink initlink(){
-    srand((unsigned int)(time(NULL)));
-    NSLog(@"How many numbers:");
-    int num;
-    scanf("%d", &num);
-    int i;
-    for (i=1; i>=num; i++) {
-        
-        
-    }
+void pushLink(double Data, datalink* link){
+    dataNode* DataNode = malloc(sizeof(dataNode));
+    DataNode -> data = Data;
+    link -> tail -> back = DataNode;
+    link -> tail = DataNode;
 }
-
 
 /*
  *下面就是令人生畏的排序函数……
