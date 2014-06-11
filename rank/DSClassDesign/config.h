@@ -19,7 +19,7 @@
 typedef struct dataNode{ //数据节点
     struct dataNode *front; //前一节点指针
     struct dataNode *back; //后一节点指针
-    double data; // 双精度数据
+    int data; // 双精度数据
 }dataNode;
 
 typedef struct datalink{ //数据链式表
@@ -72,9 +72,9 @@ void pushStack(stack* StackWillBeAdd, dataNode x){
     StackWillBeAdd -> head -> status = 0;
 }
 
-double popStack(stack* StackWillBePop){
+int popStack(stack* StackWillBePop){
     stackNode* StackNode;
-    double returnDN;
+    int returnDN;
     StackNode = StackWillBePop -> head -> next -> next;
     returnDN = StackWillBePop -> head -> next -> data -> data;
     free(StackWillBePop->head->next);
@@ -88,16 +88,18 @@ double popStack(stack* StackWillBePop){
 void initLink(datalink* link){
     link -> head = malloc(sizeof(dataNode));
     link -> tail = malloc(sizeof(dataNode));
+    link -> tail = link -> head; //因为只有一个元素，所以头尾皆为同一起始节点
 }
 
 /*
  *增加链表元素
  */
-void pushLink(double Data, datalink* link){
+void pushLink(int Data, datalink* link){
     dataNode* DataNode = malloc(sizeof(dataNode));
     DataNode -> data = Data;
     link -> tail -> back = DataNode;
     DataNode -> front = link -> tail;
+    link -> tail = DataNode;
 }
 
 /*

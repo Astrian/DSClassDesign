@@ -25,13 +25,15 @@ int main(int argc, const char * argv[])
         NSString *logs;
         dataNode *a;
         a = link -> head;
-        double data = a -> data;
+        int data = a -> data;
         for (i = 1; i <= numbers; i++) {
-            logs = [[NSString alloc] initWithFormat:@"Data: %f", data];
+            logs = [[NSString alloc] initWithFormat:@"Data: %d", data];
             NSLog(logs);
             if (a -> back != NULL) {
                 a = a->back;
             }
         }
+    }else{
+        NSLog(@"THIS IS A ILLEGAL NUMBER!");
     }
 }
