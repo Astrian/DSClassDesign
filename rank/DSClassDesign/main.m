@@ -11,7 +11,6 @@
 
 int main(int argc, const char * argv[])
 {
-    srand((unsigned int)(time(NULL)));
     datalink *link = malloc(sizeof(datalink));
     NSLog(@"How many numbers:");
     int numbers;
@@ -20,6 +19,7 @@ int main(int argc, const char * argv[])
         int i;
         initLink(link);
         for (i = 1; i <= numbers; i++) {
+            srand((unsigned int)(time(NULL)));
             pushLink(rand(), link);
         }
         NSString *logs;
