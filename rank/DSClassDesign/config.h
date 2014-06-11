@@ -96,13 +96,8 @@ void initLink(datalink* link){
 void pushLink(double Data, datalink* link){
     dataNode* DataNode = malloc(sizeof(dataNode));
     DataNode -> data = Data;
-    if(link -> head -> back == NULL){
-        link -> head = DataNode;
-    }else{
-        DataNode -> front = link -> tail;
-    }
     link -> tail -> back = DataNode;
-    link -> tail = DataNode;
+    DataNode -> front = link -> tail;
 }
 
 /*
