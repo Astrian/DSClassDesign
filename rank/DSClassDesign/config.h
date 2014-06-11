@@ -61,7 +61,7 @@ void freeStack(stack* StackWillBeFree){
         Stack2 = Stack1;
     }
     free( StackWillBeFree -> tail );
-}
+} //释放堆栈
 
 void pushStack(stack* StackWillBeAdd, dataNode x){
     stackNode* StackNode;
@@ -70,7 +70,7 @@ void pushStack(stack* StackWillBeAdd, dataNode x){
     StackNode -> next = StackWillBeAdd -> head -> next -> next;
     StackWillBeAdd -> head -> next = StackNode;
     StackWillBeAdd -> head -> status = 0;
-}
+} //向堆栈添加数据
 
 int popStack(stack* StackWillBePop){
     stackNode* StackNode;
@@ -80,7 +80,7 @@ int popStack(stack* StackWillBePop){
     free(StackWillBePop->head->next);
     StackWillBePop -> head -> next = StackNode;
     return returnDN;
-}
+} //从堆栈删除数据
 
 /*
  *初始化链表
