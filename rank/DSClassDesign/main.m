@@ -19,15 +19,20 @@ int main(int argc, const char * argv[])
         int i;
         initLink(link);
         for (i = 1; i <= numbers; i++) {
-            srand((unsigned int)(time(NULL)));
-            pushLink(rand(), link);
+            double clock1 = -1, clock2 = clock();
+            int Rand;
+            if (clock1 != clock2) {
+                clock1 = clock2;
+                srand((unsigned)clock());
+                Rand = rand()%101+0;
+                pushLink(Rand, link);
+            }
         }
         NSString *logs;
-        dataNode *a;
-        a = link -> head;
-        int data = a -> data;
+        dataNode *a = malloc(sizeof(dataNode));
+        a = link -> head -> back;
         for (i = 1; i <= numbers; i++) {
-            logs = [[NSString alloc] initWithFormat:@"Data: %d", data];
+            logs = [[NSString alloc] initWithFormat:@"Data: %d", a -> data];
             NSLog(logs);
             if (a -> back != NULL) {
                 a = a->back;
