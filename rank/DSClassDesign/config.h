@@ -83,11 +83,24 @@ double popStack(stack* StackWillBePop){
 }
 
 /*
+ *初始化链表
+ */
+void initLink(datalink* link){
+    link -> head = malloc(sizeof(dataNode));
+    link -> tail = malloc(sizeof(dataNode));
+}
+
+/*
  *增加链表元素
  */
 void pushLink(double Data, datalink* link){
     dataNode* DataNode = malloc(sizeof(dataNode));
     DataNode -> data = Data;
+    if(link -> head -> back == NULL){
+        link -> head = DataNode;
+    }else{
+        DataNode -> front = link -> tail;
+    }
     link -> tail -> back = DataNode;
     link -> tail = DataNode;
 }
