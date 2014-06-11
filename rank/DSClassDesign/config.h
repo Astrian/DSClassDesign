@@ -21,7 +21,6 @@ typedef struct dataNode{ //数据节点
     struct dataNode *back; //后一节点指针
     int data; // 双精度数据
 }dataNode;
-
 typedef struct datalink{ //数据链式表
     dataNode *head; //首节点指针
     dataNode *tail; //尾节点指针
@@ -35,12 +34,10 @@ typedef struct stackNode{ //堆栈节点
     struct stackNode* next; //下一堆栈节点的指针
     int status; //状态，可能用不到……
 }stackNode;
-
 typedef struct stack{
     stackNode *head;
     stackNode *tail;
 }stack; //堆栈定义
-
 
 /*
  *定义一堆函数
@@ -50,7 +47,6 @@ void initStack(stack* Stack){
     Stack -> head = malloc(sizeof(stackNode));
     Stack -> tail = malloc(sizeof(stackNode));
 } //初始化堆栈
-
 void freeStack(stack* StackWillBeFree){
     stackNode* Stack1;
     stackNode* Stack2;
@@ -62,7 +58,6 @@ void freeStack(stack* StackWillBeFree){
     }
     free( StackWillBeFree -> tail );
 } //释放堆栈
-
 void pushStack(stack* StackWillBeAdd, dataNode x){
     stackNode* StackNode;
     StackNode = malloc(sizeof(stackNode));
@@ -71,7 +66,6 @@ void pushStack(stack* StackWillBeAdd, dataNode x){
     StackWillBeAdd -> head -> next = StackNode;
     StackWillBeAdd -> head -> status = 0;
 } //向堆栈添加数据
-
 int popStack(stack* StackWillBePop){
     stackNode* StackNode;
     int returnDN;
@@ -94,20 +88,49 @@ void initLink(datalink* link){
 /*
  *增加链表元素
  */
-void pushLink(int Data, datalink* link){
+void pushLinkData(int Data, datalink* link){
     dataNode* DataNode = malloc(sizeof(dataNode));
     DataNode -> data = Data;
     link -> tail -> back = DataNode;
     DataNode -> front = link -> tail;
     link -> tail = DataNode;
-}
+} //增加数据
+void pushLinkNode(datalink* linkWillBeAdd, dataNode x){
+    linkWillBeAdd -> tail -> back = &x;
+    x . front = linkWillBeAdd -> tail;
+    linkWillBeAdd -> tail = &x;
+} //增加节点
 
 /*
  *下面就是令人生畏的排序函数……
  *快速排序
  */
 void fastrank(datalink* link){
-    
+    if (link -> head == link -> tail) return; //如果木有数据在表中，打回~
+    if (link -> tail -> front == link -> head) return; //如果表中只有一个数据，打回~
+    //如果不打回的话就进行排序啦~
+    datalink *leftLink = malloc(sizeof(stack));
+    datalink *rightLink = malloc(sizeof(stack));
+    int standNum = link -> head -> back -> data;
+    dataNode *Node = malloc(sizeof(dataNode));
+    Node = link -> head -> back;
+    while (Node -> back != NULL) {
+        if (Node -> data <= standNum) {
+            pushLinkNode(leftLink, *Node);
+        }else{
+            pushLinkNode(rightLink, *Node);
+        }
+    }
+    //排序完毕就左右继续排序，递归啊递归……
+    fastrank(leftLink);
+    fastrank(rightLink);
+    free(link);
+    //link = malloc(sizeof(datalink));
+    //合并！
+    Node = leftLink -> head;
+    while (Node != NULL) {
+        pushLinkNode(link, *Node);
+    }
 }
 
 

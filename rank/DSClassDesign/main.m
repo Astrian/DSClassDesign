@@ -28,21 +28,18 @@ int main(int argc, const char * argv[])
             if (clock1 != clock2) {
                 clock1 = clock2;
                 srand((unsigned)clock());
-                Rand = rand()%101+0;
-                pushLink(Rand, link);
+                Rand = rand()%1001+0;
+                pushLinkData(Rand, link);
             }
         }
-        NSString *logs;
-        dataNode *a = malloc(sizeof(dataNode));
-        a = link -> head -> back;
-        for (i = 1; i <= numbers; i++) {
-            logs = [[NSString alloc] initWithFormat:@"Data: %d", a -> data];
-            NSLog(logs);
-            if (a -> back != NULL) {
-                a = a->back;
-            }
+        fastrank(link);
+        dataNode *Node = malloc(sizeof(dataNode));
+        Node = link -> head -> back;
+        while (Node != NULL) {
+            NSLog([[NSString alloc] initWithFormat:@"Lvl %d", Node -> data]);
         }
     }else{
         NSLog(@"THIS IS A ILLEGAL NUMBER!");
+        //谁叫你输超过1000的数字的！打回！
     }
 }
