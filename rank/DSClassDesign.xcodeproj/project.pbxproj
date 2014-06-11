@@ -469,6 +469,7 @@
 				45A3DE6A19482CB300AE1CEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45A3DE6B19482CB300AE1CEB /* Build configuration list for PBXNativeTarget "DSClassDesignTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +478,7 @@
 				45A3DE6D19482CB300AE1CEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

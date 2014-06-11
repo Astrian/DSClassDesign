@@ -35,3 +35,43 @@ typedef struct stackNode{ //堆栈节点
     int status; //状态，可能用不到……
 }stackNode;
 
+typedef struct stack{
+    stackNode *head;
+    stackNode *tail;
+}stack; //堆栈定义
+
+void initStack(stack* Stack){
+    Stack -> head = malloc(sizeof(stackNode));
+    Stack -> tail = malloc(sizeof(stackNode));
+} //初始化堆栈
+
+void freeStack(stack* StackWillBeFree){
+    stackNode* Stack1;
+    stackNode* Stack2;
+    Stack2 = StackWillBeFree -> head;
+    while (Stack2 != StackWillBeFree -> tail) {
+        Stack1 = Stack2 -> next;
+        free(Stack2);
+        Stack2 = Stack1;
+    }
+    free( StackWillBeFree -> tail );
+}
+
+void push(stack* StackWillBeAdd, dataNode x){
+    stackNode* StackNode;
+    StackNode = malloc(sizeof(stackNode));
+    StackNode -> data = &x;
+    StackNode -> next = StackWillBeAdd -> head -> next -> next;
+    StackWillBeAdd -> head -> next = StackNode;
+    StackWillBeAdd -> head -> status = 0;
+}
+
+double pop(stack* StackWillBePop){
+    stackNode* StackNode;
+    double returnDN;
+    StackNode = StackWillBePop -> head -> next -> next;
+    returnDN = StackWillBePop -> head -> next -> data -> data;
+    free(StackWillBePop->head->next);
+    StackWillBePop -> head -> next = StackNode;
+    return returnDN;
+}
