@@ -22,9 +22,9 @@ typedef struct dataNode{ //数据节点
     double data; // 双精度数据
 }dataNode;
 
-typedef struct data{ //数据链式表
+typedef struct datalink{ //数据链式表
     dataNode *head; //首节点指针
-}data;
+}datalink;
 
 /*
  *定义堆栈，用于存储不同的随机数
@@ -40,6 +40,11 @@ typedef struct stack{
     stackNode *tail;
 }stack; //堆栈定义
 
+
+/*
+ *定义一堆函数
+ *首先是堆栈日常函数
+ */
 void initStack(stack* Stack){
     Stack -> head = malloc(sizeof(stackNode));
     Stack -> tail = malloc(sizeof(stackNode));
@@ -75,3 +80,52 @@ double pop(stack* StackWillBePop){
     StackWillBePop -> head -> next = StackNode;
     return returnDN;
 }
+
+/*
+ *新增链表数据
+ */
+datalink initlink(){
+    srand((unsigned int)(time(NULL)));
+    NSLog(@"How many numbers:");
+    int num;
+    scanf("%d", &num);
+    int i;
+    for (i=1; i>=num; i++) {
+        
+        
+    }
+}
+
+
+/*
+ *下面就是令人生畏的排序函数……
+ *快速排序
+ */
+void fastrank(datalink* link){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
