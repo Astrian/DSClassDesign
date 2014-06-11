@@ -95,10 +95,10 @@ void pushLinkData(int Data, datalink* link){
     DataNode -> front = link -> tail;
     link -> tail = DataNode;
 } //增加数据
-void pushLinkNode(datalink* linkWillBeAdd, dataNode x){
-    linkWillBeAdd -> tail -> back = &x;
-    x . front = linkWillBeAdd -> tail;
-    linkWillBeAdd -> tail = &x;
+void pushLinkNode(datalink* linkWillBeAdd, dataNode* x){
+    linkWillBeAdd -> tail -> back = x;
+    x -> front = linkWillBeAdd -> tail;
+    linkWillBeAdd -> tail = x;
 } //增加节点
 
 /*
@@ -116,9 +116,9 @@ void fastrank(datalink* link){
     Node = link -> head -> back;
     while (Node -> back != NULL) {
         if (Node -> data <= standNum) {
-            pushLinkNode(leftLink, *Node);
+            pushLinkNode(leftLink, Node);
         }else{
-            pushLinkNode(rightLink, *Node);
+            pushLinkNode(rightLink, Node);
         }
     }
     //排序完毕就左右继续排序，递归啊递归……
@@ -129,7 +129,7 @@ void fastrank(datalink* link){
     //合并！
     Node = leftLink -> head;
     while (Node != NULL) {
-        pushLinkNode(link, *Node);
+        pushLinkNode(link, Node);
     }
 }
 

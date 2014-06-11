@@ -15,7 +15,7 @@ int main(int argc, const char * argv[])
     NSLog(@"How many numbers:");
     int numbers;
     scanf("%d", &numbers);
-    if (1< numbers <= 1000) {
+    if (1 < numbers && numbers <= 1000) {
         int i;
         initLink(link);
         for (i = 1; i <= numbers; i++) {
