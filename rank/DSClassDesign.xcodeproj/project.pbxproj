@@ -50,6 +50,7 @@
 		45A3DE6019482CB300AE1CEB /* DSClassDesignTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSClassDesignTests-Info.plist"; sourceTree = "<group>"; };
 		45A3DE6219482CB300AE1CEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45A3DE6419482CB300AE1CEB /* DSClassDesignTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSClassDesignTests.m; sourceTree = "<group>"; };
+		45A3DE7119482F3500AE1CEB /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 		45A3DE4119482CB300AE1CEB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				45A3DE7119482F3500AE1CEB /* config.h */,
 				45A3DE4219482CB300AE1CEB /* DSClassDesign-Info.plist */,
 				45A3DE4319482CB300AE1CEB /* InfoPlist.strings */,
 				45A3DE4619482CB300AE1CEB /* main.m */,
