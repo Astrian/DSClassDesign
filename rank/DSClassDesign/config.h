@@ -82,6 +82,9 @@ int popStack(stack* StackWillBePop){
 void initLink(datalink* link){
     link -> head = malloc(sizeof(dataNode));
     link -> tail = malloc(sizeof(dataNode));
+    dataNode *start = malloc(sizeof(dataNode));
+    start -> data = -1;
+    link -> head = start;
     link -> tail = link -> head; //因为只有一个元素，所以头尾皆为同一起始节点
 }
 
@@ -95,10 +98,12 @@ void pushLinkData(int Data, datalink* link){
     DataNode -> front = link -> tail;
     link -> tail = DataNode;
 } //增加数据
-void pushLinkNode(datalink* linkWillBeAdd, dataNode* x){
-    linkWillBeAdd -> tail -> back = x;
-    x -> front = linkWillBeAdd -> tail;
-    linkWillBeAdd -> tail = x;
+void pushLinkNode(datalink* link, dataNode* x){
+    dataNode* DataNode = malloc(sizeof(dataNode));
+    DataNode -> data = x -> data;
+    link -> tail -> back = DataNode;
+    DataNode -> front = link -> tail;
+    link -> tail = DataNode;
 } //增加节点
 
 /*
@@ -111,15 +116,18 @@ void fastrank(datalink* link){
     //如果不打回的话就进行排序啦~
     datalink *leftLink = malloc(sizeof(stack));
     datalink *rightLink = malloc(sizeof(stack));
+    initLink(leftLink);
+    initLink(rightLink);
     int standNum = link -> head -> back -> data;
     dataNode *Node = malloc(sizeof(dataNode));
     Node = link -> head -> back;
-    while (Node -> back != NULL) {
+    while (Node != NULL) {
         if (Node -> data <= standNum) {
             pushLinkNode(leftLink, Node);
         }else{
             pushLinkNode(rightLink, Node);
         }
+        Node = Node -> back;
     }
     //排序完毕就左右继续排序，递归啊递归……
     fastrank(leftLink);

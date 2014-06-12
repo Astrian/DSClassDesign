@@ -19,18 +19,7 @@ int main(int argc, const char * argv[])
         int i;
         initLink(link);
         for (i = 1; i <= numbers; i++) {
-            /*******************************************************************************************
-             * time()函数老傲娇……只能用 clock()……但是因为编辑器又跑太快……老重复数据……然后只能做一个时间函数去重判断 *
-             * (╯°□°）╯︵ ┻━┻信不信劳资不陪你玩儿了！                                                       *
-             *******************************************************************************************/
-            double clock1 = -1, clock2 = clock();
-            int Rand;
-            if (clock1 != clock2) {
-                clock1 = clock2;
-                srand((unsigned)clock());
-                Rand = rand()%1001+0;
-                pushLinkData(Rand, link);
-            }
+                pushLinkData(((unsigned)(arc4random()))%1001, link); // 靠，有这么好用的随机数算法不用……
         }
         fastrank(link);
         dataNode *Node = malloc(sizeof(dataNode));
