@@ -81,10 +81,6 @@ int popStack(stack* StackWillBePop){
  */
 void initLink(datalink* link){
     link -> head = malloc(sizeof(dataNode));
-    link -> tail = malloc(sizeof(dataNode));
-    dataNode *start = malloc(sizeof(dataNode));
-    start -> data = -1;
-    link -> head = start;
     link -> tail = link -> head; //因为只有一个元素，所以头尾皆为同一起始节点
 }
 
@@ -111,37 +107,54 @@ void pushLinkNode(datalink* link, dataNode* x){
  *快速排序
  */
 void fastrank(datalink* link){
-    if (link -> head == link -> tail) return; //如果木有数据在表中，打回~
+    if (link -> head -> back == link -> tail) return; //如果木有数据在表中，打回~
     if (link -> tail -> front == link -> head) return; //如果表中只有一个数据，打回~
     //如果不打回的话就进行排序啦~
-    datalink *leftLink = malloc(sizeof(stack));
-    datalink *rightLink = malloc(sizeof(stack));
+    datalink *leftLink;
+    datalink *rightLink;
     initLink(leftLink);
+    pushLinkData(-1, leftLink);
     initLink(rightLink);
+    pushLinkData(-1, rightLink);
     int standNum = link -> head -> back -> data;
-    dataNode *Node = malloc(sizeof(dataNode));
-    Node = link -> head -> back;
-    while (Node != NULL) {
-        if (Node -> data <= standNum) {
-            pushLinkNode(leftLink, Node);
+    dataNode *node;
+    node = link -> head -> back -> back;
+    while (node != link -> tail) {
+        if (node -> data <= standNum) {
+            pushLinkNode(leftLink, node);
         }else{
-            pushLinkNode(rightLink, Node);
+            pushLinkNode(rightLink, node);
         }
-        Node = Node -> back;
+        node = node -> back;
     }
     //排序完毕就左右继续排序，递归啊递归……
     fastrank(leftLink);
     fastrank(rightLink);
     free(link);
-    //link = malloc(sizeof(datalink));
     //合并！
-    Node = leftLink -> head;
-    while (Node != NULL) {
-        pushLinkNode(link, Node);
-    }
+    link -> head = leftLink->head;
+    link -> tail = leftLink->tail;
+    pushLinkData(standNum, leftLink);
+    leftLink -> tail -> back = rightLink -> head -> back;
+    link -> tail = leftLink -> tail;
 }
 
-
+/*
+ *显示系统日志
+ */
+void showSystemLog(datalink* link){
+    NSString *logs;
+    dataNode *p;
+    NSLog(@"Starting Log...");
+    p = link -> head -> back;
+    while (p != link -> tail) {
+        logs = [[NSString alloc] initWithFormat:@"Data: %d", p -> data];
+        NSLog(logs);
+        p = p -> back;
+    }
+    NSLog([[NSString alloc] initWithFormat:@"Data: %d", p -> data]);
+    NSLog(@"Log End.");
+}
 
 
 

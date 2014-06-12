@@ -22,11 +22,6 @@ int main(int argc, const char * argv[])
                 pushLinkData(((unsigned)(arc4random()))%1001, link); // 靠，有这么好用的随机数算法不用……
         }
         fastrank(link);
-        dataNode *Node = malloc(sizeof(dataNode));
-        Node = link -> head -> back;
-        while (Node != NULL) {
-            NSLog([[NSString alloc] initWithFormat:@"Lvl %d", Node -> data]);
-        }
     }else{
         NSLog(@"THIS IS A ILLEGAL NUMBER!");
         //谁叫你输超过1000的数字的！打回！
