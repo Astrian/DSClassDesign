@@ -145,9 +145,18 @@ void popRank(datalink *link)_{
     Node2 = link -> head -> back -> back;
     while(){
         if (Node1 -> data > Node2 -> data){
-            
+            Node2 -> front = Node1 -> front;
+            Node1 -> back = Node2 -> back;
+            Node1 -> back = Node2;
+            Node2 -> front = Node1;
         }
+        Node1 = Node1 -> back;
+        Node2 = Node2 -> back;
     }
+    while(Node1 != -1){
+        Node1 = Node1 -> front;
+    }
+    link -> head -> back = Node1 -> Next;
 }
 
 /*
