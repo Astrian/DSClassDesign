@@ -139,6 +139,17 @@ void fastrank(datalink* link){
     link -> tail = leftLink -> tail;
 }
 
+void popRank(datalink *link)_{
+    datalink *Node1, *Node2;
+    Node1 = link -> head -> back;
+    Node2 = link -> head -> back -> back;
+    while(){
+        if (Node1 -> data > Node2 -> data){
+            
+        }
+    }
+}
+
 /*
  *显示系统日志
  */
@@ -155,26 +166,4 @@ void showSystemLog(datalink* link){
     NSLog([[NSString alloc] initWithFormat:@"Data: %d", p -> data]);
     NSLog(@"Log End.");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
