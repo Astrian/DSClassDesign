@@ -42,6 +42,8 @@
 		45D0F382194DC22000E20702 /* QSSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F380194DC22000E20702 /* QSSearch.m */; };
 		45D0F385194DC40600E20702 /* QSPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F384194DC40600E20702 /* QSPeople.m */; };
 		45D0F386194DC40600E20702 /* QSPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F384194DC40600E20702 /* QSPeople.m */; };
+		45D0F38D194DD51B00E20702 /* QSHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F38C194DD51B00E20702 /* QSHead.m */; };
+		45D0F38E194DD51B00E20702 /* QSHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F38C194DD51B00E20702 /* QSHead.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		45D0F380194DC22000E20702 /* QSSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSSearch.m; sourceTree = "<group>"; };
 		45D0F383194DC40600E20702 /* QSPeople.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPeople.h; sourceTree = "<group>"; };
 		45D0F384194DC40600E20702 /* QSPeople.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSPeople.m; sourceTree = "<group>"; };
+		45D0F38B194DD51B00E20702 /* QSHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHead.h; sourceTree = "<group>"; };
+		45D0F38C194DD51B00E20702 /* QSHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHead.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 			children = (
 				45D0F33B194DBA5A00E20702 /* QSAppDelegate.h */,
 				45D0F33C194DBA5A00E20702 /* QSAppDelegate.m */,
+				45D0F38B194DD51B00E20702 /* QSHead.h */,
+				45D0F38C194DD51B00E20702 /* QSHead.m */,
 				45D0F33E194DBA5A00E20702 /* Main.storyboard */,
 				45D0F383194DC40600E20702 /* QSPeople.h */,
 				45D0F384194DC40600E20702 /* QSPeople.m */,
@@ -333,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D0F343194DBA5A00E20702 /* QSViewController.m in Sources */,
+				45D0F38D194DD51B00E20702 /* QSHead.m in Sources */,
 				45D0F381194DC22000E20702 /* QSSearch.m in Sources */,
 				45D0F37B194DC02500E20702 /* TWMessageBarManager.m in Sources */,
 				45D0F385194DC40600E20702 /* QSPeople.m in Sources */,
@@ -349,6 +356,7 @@
 				45D0F37C194DC02500E20702 /* TWMessageBarManager.m in Sources */,
 				45D0F382194DC22000E20702 /* QSSearch.m in Sources */,
 				45D0F386194DC40600E20702 /* QSPeople.m in Sources */,
+				45D0F38E194DD51B00E20702 /* QSHead.m in Sources */,
 				45D0F358194DBA5A00E20702 /* QueueSystemTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

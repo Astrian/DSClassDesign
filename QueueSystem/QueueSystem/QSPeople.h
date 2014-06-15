@@ -15,8 +15,14 @@
     NSString *name;
 }
 
--(void)initPeople:(NSObject *)frontObj num:(int)number;
+@property(nonatomic,retain)NSObject *front;
+@property(nonatomic,retain)NSObject *back;
+@property(nonatomic,retain)NSString *name;
+
+
+-(void)initPeople:(NSString *)Name frontObj:(NSObject *)frontObj backObj:(NSObject *)backObj num:(int)number;
 -(NSObject *)whatIsFront;
 -(NSObject *)whatIsBack;
 -(int)posisstion:(int)totalPeople gone:(int)gone;
+
 @end

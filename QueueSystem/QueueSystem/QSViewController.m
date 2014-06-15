@@ -23,8 +23,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSObject *headObj;
-    headObj = [[QSPeople alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
