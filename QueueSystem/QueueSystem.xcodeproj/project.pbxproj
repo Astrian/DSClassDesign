@@ -21,6 +21,27 @@
 		45D0F34E194DBA5A00E20702 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D0F330194DBA5A00E20702 /* UIKit.framework */; };
 		45D0F356194DBA5A00E20702 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F354194DBA5A00E20702 /* InfoPlist.strings */; };
 		45D0F358194DBA5A00E20702 /* QueueSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F357194DBA5A00E20702 /* QueueSystemTests.m */; };
+		45D0F363194DBDB900E20702 /* QSAddPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F362194DBDB900E20702 /* QSAddPeople.m */; };
+		45D0F36F194DC02500E20702 /* icon-error.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F366194DC02500E20702 /* icon-error.png */; };
+		45D0F370194DC02500E20702 /* icon-error.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F366194DC02500E20702 /* icon-error.png */; };
+		45D0F371194DC02500E20702 /* icon-error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F367194DC02500E20702 /* icon-error@2x.png */; };
+		45D0F372194DC02500E20702 /* icon-error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F367194DC02500E20702 /* icon-error@2x.png */; };
+		45D0F373194DC02500E20702 /* icon-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F368194DC02500E20702 /* icon-info.png */; };
+		45D0F374194DC02500E20702 /* icon-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F368194DC02500E20702 /* icon-info.png */; };
+		45D0F375194DC02500E20702 /* icon-info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F369194DC02500E20702 /* icon-info@2x.png */; };
+		45D0F376194DC02500E20702 /* icon-info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F369194DC02500E20702 /* icon-info@2x.png */; };
+		45D0F377194DC02500E20702 /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F36A194DC02500E20702 /* icon-success.png */; };
+		45D0F378194DC02500E20702 /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F36A194DC02500E20702 /* icon-success.png */; };
+		45D0F379194DC02500E20702 /* icon-success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F36B194DC02500E20702 /* icon-success@2x.png */; };
+		45D0F37A194DC02500E20702 /* icon-success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F36B194DC02500E20702 /* icon-success@2x.png */; };
+		45D0F37B194DC02500E20702 /* TWMessageBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F36D194DC02500E20702 /* TWMessageBarManager.m */; };
+		45D0F37C194DC02500E20702 /* TWMessageBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F36D194DC02500E20702 /* TWMessageBarManager.m */; };
+		45D0F37D194DC02500E20702 /* TWMessageBarManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F36E194DC02500E20702 /* TWMessageBarManager.podspec */; };
+		45D0F37E194DC02500E20702 /* TWMessageBarManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 45D0F36E194DC02500E20702 /* TWMessageBarManager.podspec */; };
+		45D0F381194DC22000E20702 /* QSSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F380194DC22000E20702 /* QSSearch.m */; };
+		45D0F382194DC22000E20702 /* QSSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F380194DC22000E20702 /* QSSearch.m */; };
+		45D0F385194DC40600E20702 /* QSPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F384194DC40600E20702 /* QSPeople.m */; };
+		45D0F386194DC40600E20702 /* QSPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D0F384194DC40600E20702 /* QSPeople.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +74,21 @@
 		45D0F353194DBA5A00E20702 /* QueueSystemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QueueSystemTests-Info.plist"; sourceTree = "<group>"; };
 		45D0F355194DBA5A00E20702 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45D0F357194DBA5A00E20702 /* QueueSystemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueSystemTests.m; sourceTree = "<group>"; };
+		45D0F361194DBDB900E20702 /* QSAddPeople.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSAddPeople.h; sourceTree = "<group>"; };
+		45D0F362194DBDB900E20702 /* QSAddPeople.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSAddPeople.m; sourceTree = "<group>"; };
+		45D0F366194DC02500E20702 /* icon-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-error.png"; sourceTree = "<group>"; };
+		45D0F367194DC02500E20702 /* icon-error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-error@2x.png"; sourceTree = "<group>"; };
+		45D0F368194DC02500E20702 /* icon-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info.png"; sourceTree = "<group>"; };
+		45D0F369194DC02500E20702 /* icon-info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info@2x.png"; sourceTree = "<group>"; };
+		45D0F36A194DC02500E20702 /* icon-success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success.png"; sourceTree = "<group>"; };
+		45D0F36B194DC02500E20702 /* icon-success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success@2x.png"; sourceTree = "<group>"; };
+		45D0F36C194DC02500E20702 /* TWMessageBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMessageBarManager.h; sourceTree = "<group>"; };
+		45D0F36D194DC02500E20702 /* TWMessageBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMessageBarManager.m; sourceTree = "<group>"; };
+		45D0F36E194DC02500E20702 /* TWMessageBarManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TWMessageBarManager.podspec; sourceTree = "<group>"; };
+		45D0F37F194DC22000E20702 /* QSSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSSearch.h; sourceTree = "<group>"; };
+		45D0F380194DC22000E20702 /* QSSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSSearch.m; sourceTree = "<group>"; };
+		45D0F383194DC40600E20702 /* QSPeople.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPeople.h; sourceTree = "<group>"; };
+		45D0F384194DC40600E20702 /* QSPeople.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSPeople.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +151,15 @@
 				45D0F33B194DBA5A00E20702 /* QSAppDelegate.h */,
 				45D0F33C194DBA5A00E20702 /* QSAppDelegate.m */,
 				45D0F33E194DBA5A00E20702 /* Main.storyboard */,
+				45D0F383194DC40600E20702 /* QSPeople.h */,
+				45D0F384194DC40600E20702 /* QSPeople.m */,
+				45D0F37F194DC22000E20702 /* QSSearch.h */,
+				45D0F380194DC22000E20702 /* QSSearch.m */,
+				45D0F361194DBDB900E20702 /* QSAddPeople.h */,
+				45D0F362194DBDB900E20702 /* QSAddPeople.m */,
 				45D0F341194DBA5A00E20702 /* QSViewController.h */,
 				45D0F342194DBA5A00E20702 /* QSViewController.m */,
+				45D0F364194DC02500E20702 /* TWMessageBarManager */,
 				45D0F344194DBA5A00E20702 /* Images.xcassets */,
 				45D0F333194DBA5A00E20702 /* Supporting Files */,
 			);
@@ -150,6 +193,31 @@
 				45D0F354194DBA5A00E20702 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45D0F364194DC02500E20702 /* TWMessageBarManager */ = {
+			isa = PBXGroup;
+			children = (
+				45D0F365194DC02500E20702 /* Icons */,
+				45D0F36C194DC02500E20702 /* TWMessageBarManager.h */,
+				45D0F36D194DC02500E20702 /* TWMessageBarManager.m */,
+				45D0F36E194DC02500E20702 /* TWMessageBarManager.podspec */,
+			);
+			name = TWMessageBarManager;
+			path = "../../../../Downloads/TWMessageBarManager-master/TWMessageBarManager";
+			sourceTree = "<group>";
+		};
+		45D0F365194DC02500E20702 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				45D0F366194DC02500E20702 /* icon-error.png */,
+				45D0F367194DC02500E20702 /* icon-error@2x.png */,
+				45D0F368194DC02500E20702 /* icon-info.png */,
+				45D0F369194DC02500E20702 /* icon-info@2x.png */,
+				45D0F36A194DC02500E20702 /* icon-success.png */,
+				45D0F36B194DC02500E20702 /* icon-success@2x.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +298,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D0F345194DBA5A00E20702 /* Images.xcassets in Resources */,
+				45D0F36F194DC02500E20702 /* icon-error.png in Resources */,
+				45D0F377194DC02500E20702 /* icon-success.png in Resources */,
+				45D0F373194DC02500E20702 /* icon-info.png in Resources */,
+				45D0F375194DC02500E20702 /* icon-info@2x.png in Resources */,
+				45D0F379194DC02500E20702 /* icon-success@2x.png in Resources */,
 				45D0F337194DBA5A00E20702 /* InfoPlist.strings in Resources */,
+				45D0F37D194DC02500E20702 /* TWMessageBarManager.podspec in Resources */,
 				45D0F340194DBA5A00E20702 /* Main.storyboard in Resources */,
+				45D0F371194DC02500E20702 /* icon-error@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +315,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D0F356194DBA5A00E20702 /* InfoPlist.strings in Resources */,
+				45D0F37A194DC02500E20702 /* icon-success@2x.png in Resources */,
+				45D0F370194DC02500E20702 /* icon-error.png in Resources */,
+				45D0F378194DC02500E20702 /* icon-success.png in Resources */,
+				45D0F374194DC02500E20702 /* icon-info.png in Resources */,
+				45D0F372194DC02500E20702 /* icon-error@2x.png in Resources */,
+				45D0F376194DC02500E20702 /* icon-info@2x.png in Resources */,
+				45D0F37E194DC02500E20702 /* TWMessageBarManager.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +333,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D0F343194DBA5A00E20702 /* QSViewController.m in Sources */,
+				45D0F381194DC22000E20702 /* QSSearch.m in Sources */,
+				45D0F37B194DC02500E20702 /* TWMessageBarManager.m in Sources */,
+				45D0F385194DC40600E20702 /* QSPeople.m in Sources */,
 				45D0F33D194DBA5A00E20702 /* QSAppDelegate.m in Sources */,
+				45D0F363194DBDB900E20702 /* QSAddPeople.m in Sources */,
 				45D0F339194DBA5A00E20702 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +346,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D0F37C194DC02500E20702 /* TWMessageBarManager.m in Sources */,
+				45D0F382194DC22000E20702 /* QSSearch.m in Sources */,
+				45D0F386194DC40600E20702 /* QSPeople.m in Sources */,
 				45D0F358194DBA5A00E20702 /* QueueSystemTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +546,7 @@
 				45D0F35D194DBA5A00E20702 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45D0F35E194DBA5A00E20702 /* Build configuration list for PBXNativeTarget "QueueSystemTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +555,7 @@
 				45D0F360194DBA5A00E20702 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
