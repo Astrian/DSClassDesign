@@ -1,5 +1,5 @@
 //
-//  QSHead.h
+//  QSTail.h
 //  QueueSystem
 //
 //  Created by Astrian Zheng on 15/6/14.
@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface QSHead : NSObject{
-    NSObject *first;
+@interface QSTail : NSObject{
+    NSObject *last;
 }
 
-@property(nonatomic,retain)NSObject *first;
+@property(nonatomic,retain)NSObject *last;
 
--(void)initHead:(NSObject *)firstObj;
+
+-(void)changeTail:(NSObject *)lastObj;
 @end

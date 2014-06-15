@@ -11,6 +11,8 @@
 #import "QSPeople.m"
 #import "QSHead.h"
 #import "QSHead.m"
+#import "QSTail.h"
+#import "QSTail.m"
 
 @implementation QSAppDelegate
 
@@ -18,8 +20,7 @@
 {
     // Override point for customization after application launch.
     return YES;
-    NSObject *headObj;
-    headObj = [[[QSHead alloc] init] initHead];
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

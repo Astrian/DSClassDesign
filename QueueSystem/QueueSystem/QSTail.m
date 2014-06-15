@@ -1,15 +1,15 @@
 //
-//  QSHead.m
+//  QSTail.m
 //  QueueSystem
 //
 //  Created by Astrian Zheng on 15/6/14.
 //  Copyright (c) 2014年 Astrian Zheng. All rights reserved.
 //
 
-#import "QSHead.h"
+#import "QSTail.h"
 
-@implementation QSHead
--(void)initHead:(NSObject *)firstObj{
-    first = firstObj;
+@implementation QSTail
+-(void)changeHead:(NSObject *)lastObj{
+    last = lastObj;
 }
 @end

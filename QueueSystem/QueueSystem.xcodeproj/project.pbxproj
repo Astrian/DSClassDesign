@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45431860194DD72400C902B8 /* QSTail.m in Sources */ = {isa = PBXBuildFile; fileRef = 4543185F194DD72400C902B8 /* QSTail.m */; };
 		45D0F32D194DBA5A00E20702 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D0F32C194DBA5A00E20702 /* Foundation.framework */; };
 		45D0F32F194DBA5A00E20702 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D0F32E194DBA5A00E20702 /* CoreGraphics.framework */; };
 		45D0F331194DBA5A00E20702 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D0F330194DBA5A00E20702 /* UIKit.framework */; };
@@ -57,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4543185E194DD72400C902B8 /* QSTail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSTail.h; sourceTree = "<group>"; };
+		4543185F194DD72400C902B8 /* QSTail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSTail.m; sourceTree = "<group>"; };
 		45D0F329194DBA5A00E20702 /* QueueSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QueueSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D0F32C194DBA5A00E20702 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45D0F32E194DBA5A00E20702 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -154,6 +157,8 @@
 			children = (
 				45D0F33B194DBA5A00E20702 /* QSAppDelegate.h */,
 				45D0F33C194DBA5A00E20702 /* QSAppDelegate.m */,
+				4543185E194DD72400C902B8 /* QSTail.h */,
+				4543185F194DD72400C902B8 /* QSTail.m */,
 				45D0F38B194DD51B00E20702 /* QSHead.h */,
 				45D0F38C194DD51B00E20702 /* QSHead.m */,
 				45D0F33E194DBA5A00E20702 /* Main.storyboard */,
@@ -340,6 +345,7 @@
 			files = (
 				45D0F343194DBA5A00E20702 /* QSViewController.m in Sources */,
 				45D0F38D194DD51B00E20702 /* QSHead.m in Sources */,
+				45431860194DD72400C902B8 /* QSTail.m in Sources */,
 				45D0F381194DC22000E20702 /* QSSearch.m in Sources */,
 				45D0F37B194DC02500E20702 /* TWMessageBarManager.m in Sources */,
 				45D0F385194DC40600E20702 /* QSPeople.m in Sources */,

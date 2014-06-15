@@ -10,11 +10,15 @@
 
 @implementation QSPeople
 
--(void)initPeople:(NSString *)Name frontObj:(NSObject *)frontObj backObj:(NSObject *)backObj num:(int)number{
+-(void)initPeople:(NSString *)Name
+         frontObj:(NSObject *)frontObj
+          backObj:(NSObject *)backObj
+              num:(int)Num{
+    
     name = Name;
     front = frontObj;
     back = backObj;
-    Num = number;
+    num = Num;
 }
 
 -(void)initHead{

@@ -11,7 +11,7 @@
 @interface QSPeople : NSObject{
     NSObject* front;
     NSObject* back;
-    int Num;
+    int num;
     NSString *name;
 }
 
@@ -20,9 +20,13 @@
 @property(nonatomic,retain)NSString *name;
 
 
--(void)initPeople:(NSString *)Name frontObj:(NSObject *)frontObj backObj:(NSObject *)backObj num:(int)number;
+-(void)initPeople:(NSString *)Name
+    frontObj:(NSObject *)frontObj
+    backObj:(NSObject *)backObj
+    num:(int)Num;
 -(NSObject *)whatIsFront;
 -(NSObject *)whatIsBack;
--(int)posisstion:(int)totalPeople gone:(int)gone;
-
+-(int)posisstion:(int)totalPeople
+            gone:(int)gone;
+-(void) setupTabBarController;
 @end
