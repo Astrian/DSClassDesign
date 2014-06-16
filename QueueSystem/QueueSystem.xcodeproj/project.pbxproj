@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		453B7239194EDE3100E436F9 /* coloregg.png in Resources */ = {isa = PBXBuildFile; fileRef = 453B7238194EDE3100E436F9 /* coloregg.png */; };
 		454F6108194EA35A00EB6173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454F6107194EA35A00EB6173 /* Foundation.framework */; };
 		454F610A194EA35A00EB6173 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454F6109194EA35A00EB6173 /* CoreGraphics.framework */; };
 		454F610C194EA35A00EB6173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454F610B194EA35A00EB6173 /* UIKit.framework */; };
@@ -30,6 +29,7 @@
 		454F6162194EAE7500EB6173 /* icon-success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 454F6159194EAE7500EB6173 /* icon-success@2x.png */; };
 		454F6163194EAE7500EB6173 /* TWMessageBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 454F615B194EAE7500EB6173 /* TWMessageBarManager.m */; };
 		454F6164194EAE7500EB6173 /* TWMessageBarManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 454F615C194EAE7500EB6173 /* TWMessageBarManager.podspec */; };
+		45DCC8A6194EEB9A00974084 /* coloregg.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DCC8A5194EEB9A00974084 /* coloregg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		453B7238194EDE3100E436F9 /* coloregg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coloregg.png; path = ../../../coloregg.png; sourceTree = "<group>"; };
 		454F6104194EA35A00EB6173 /* QueueSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QueueSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454F6107194EA35A00EB6173 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		454F6109194EA35A00EB6173 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,6 +72,7 @@
 		454F615A194EAE7500EB6173 /* TWMessageBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMessageBarManager.h; sourceTree = "<group>"; };
 		454F615B194EAE7500EB6173 /* TWMessageBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMessageBarManager.m; sourceTree = "<group>"; };
 		454F615C194EAE7500EB6173 /* TWMessageBarManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TWMessageBarManager.podspec; sourceTree = "<group>"; };
+		45DCC8A5194EEB9A00974084 /* coloregg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coloregg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +148,7 @@
 		454F610E194EA35A00EB6173 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				453B7238194EDE3100E436F9 /* coloregg.png */,
+				45DCC8A5194EEB9A00974084 /* coloregg.png */,
 				454F610F194EA35A00EB6173 /* QueueSystem-Info.plist */,
 				454F6110194EA35A00EB6173 /* InfoPlist.strings */,
 				454F6113194EA35A00EB6173 /* main.m */,
@@ -282,7 +282,7 @@
 				454F6161194EAE7500EB6173 /* icon-success.png in Resources */,
 				454F615F194EAE7500EB6173 /* icon-info.png in Resources */,
 				454F6160194EAE7500EB6173 /* icon-info@2x.png in Resources */,
-				453B7239194EDE3100E436F9 /* coloregg.png in Resources */,
+				45DCC8A6194EEB9A00974084 /* coloregg.png in Resources */,
 				454F6162194EAE7500EB6173 /* icon-success@2x.png in Resources */,
 				454F6112194EA35A00EB6173 /* InfoPlist.strings in Resources */,
 				454F6164194EAE7500EB6173 /* TWMessageBarManager.podspec in Resources */,
