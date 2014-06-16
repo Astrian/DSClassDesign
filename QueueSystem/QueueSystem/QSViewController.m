@@ -76,7 +76,7 @@ int visited = 0;
                                                        description:systemNoti
                                                               type:TWMessageBarMessageTypeInfo];
     }else{
-        NSString *systemNotiTitle =[[NSString alloc] initWithFormat:@"出错啦(눈_눈)"];
+        NSString *systemNotiTitle =[[NSString alloc] initWithFormat:@"出错啦(屮눈皿눈)"];
         NSString *systemNoti = [[NSString alloc] initWithFormat:@"查无此人诶！"];
         [[TWMessageBarManager sharedInstance] showMessageWithTitle:systemNotiTitle
                                                        description:systemNoti
