@@ -2,17 +2,11 @@
 //  QSAppDelegate.m
 //  QueueSystem
 //
-//  Created by Astrian Zheng on 15/6/14.
+//  Created by Astrian Zheng on 16/6/14.
 //  Copyright (c) 2014年 Astrian Zheng. All rights reserved.
 //
 
 #import "QSAppDelegate.h"
-#import "QSPeople.h"
-#import "QSPeople.m"
-#import "QSHead.h"
-#import "QSHead.m"
-#import "QSTail.h"
-#import "QSTail.m"
 
 @implementation QSAppDelegate
 

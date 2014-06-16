@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45D0F328194DBA5A00E20702"
+               BlueprintIdentifier = "454F6103194EA35A00EB6173"
                BuildableName = "QueueSystem.app"
                BlueprintName = "QueueSystem"
                ReferencedContainer = "container:QueueSystem.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45D0F349194DBA5A00E20702"
+               BlueprintIdentifier = "454F6124194EA35A00EB6173"
                BuildableName = "QueueSystemTests.xctest"
                BlueprintName = "QueueSystemTests"
                ReferencedContainer = "container:QueueSystem.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "45D0F328194DBA5A00E20702"
+            BlueprintIdentifier = "454F6103194EA35A00EB6173"
             BuildableName = "QueueSystem.app"
             BlueprintName = "QueueSystem"
             ReferencedContainer = "container:QueueSystem.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "45D0F328194DBA5A00E20702"
+            BlueprintIdentifier = "454F6103194EA35A00EB6173"
             BuildableName = "QueueSystem.app"
             BlueprintName = "QueueSystem"
             ReferencedContainer = "container:QueueSystem.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "45D0F328194DBA5A00E20702"
+            BlueprintIdentifier = "454F6103194EA35A00EB6173"
             BuildableName = "QueueSystem.app"
             BlueprintName = "QueueSystem"
             ReferencedContainer = "container:QueueSystem.xcodeproj">

@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5DE5757F-BCA1-4E7D-BCDD-731EE071D4CD</string>
+	<string>872E12DA-7F65-4121-A846-9DF9591DE44C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>QueueSystem</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>56A05A3E-6911-4653-8278-3A1196D593D1</key>
+		<key>5784AE6B-8E86-47DE-82DF-39C1B7F0E1DF</key>
 		<string>https://github.com/Astrian/DSClassDesign.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>QueueSystem/QueueSystem.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>56A05A3E-6911-4653-8278-3A1196D593D1</key>
+		<key>5784AE6B-8E86-47DE-82DF-39C1B7F0E1DF</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>56A05A3E-6911-4653-8278-3A1196D593D1</string>
+	<string>5784AE6B-8E86-47DE-82DF-39C1B7F0E1DF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>56A05A3E-6911-4653-8278-3A1196D593D1</string>
+			<string>5784AE6B-8E86-47DE-82DF-39C1B7F0E1DF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DSClassDesign</string>
 		</dict>

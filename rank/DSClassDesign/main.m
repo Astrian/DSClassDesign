@@ -20,7 +20,7 @@ int main(int argc, const char * argv[])
         initLink(link);
         for (i = 1; i <= numbers; i++) {
                 pushLinkData(((unsigned)(arc4random()))%1001, link); // 靠，有这么好用的随机数算法不用……
-        }
+        }
         fastrank(link);
     }else{
         NSLog(@"THIS IS A ILLEGAL NUMBER!");
