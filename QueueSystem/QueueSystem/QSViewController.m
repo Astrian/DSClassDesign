@@ -42,47 +42,63 @@ int visited = 0;
 
 - (IBAction)call:(id)sender {
     char* name = (char *)[self.name.text UTF8String];
-    if (find(Queue, name) == 0) {
-        NSString *systemNoti = [[NSString alloc] initWithFormat:@"%@ 已加入等待队列", self.name.text];
-        total = total + 1;
-        addNode(Queue, name, total);
-        [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"已挂号"
-                                                       description:systemNoti
-                                                              type:TWMessageBarMessageTypeSuccess];
-        self.queueWaiting.text = [[NSString alloc] initWithFormat:@"%d", total - visited];
+    if (name[0] != '\0') {
+        if (find(Queue, name) == 0) {
+            NSString *systemNoti = [[NSString alloc] initWithFormat:@"%@ 已加入等待队列", self.name.text];
+            total = total + 1;
+            addNode(Queue, name, total);
+            [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"已挂号"
+                                                           description:systemNoti
+                                                                  type:TWMessageBarMessageTypeSuccess];
+            self.queueWaiting.text = [[NSString alloc] initWithFormat:@"%d", total - visited];
+        }else{
+            NSString *systemNotiTitle = [[NSString alloc] initWithFormat:@"出错啦o(￣ヘ￣o＃)"];
+            NSString *systemNoti = [[NSString alloc] initWithFormat:@"这么碰巧遇到同名的？"];
+            [[TWMessageBarManager sharedInstance] showMessageWithTitle:systemNotiTitle
+                                                           description:systemNoti
+                                                                  type:TWMessageBarMessageTypeError];
+        }
     }else{
-        NSString *systemNotiTitle = [[NSString alloc] initWithFormat:@"出错啦o(￣ヘ￣o＃)"];
-        NSString *systemNoti = [[NSString alloc] initWithFormat:@"这么碰巧遇到同名的？"];
+        NSString *systemNotiTitle = [[NSString alloc] initWithFormat:@"出错啦(艹皿艹 )"];
+        NSString *systemNoti = [[NSString alloc] initWithFormat:@"没输入名字呢！"];
         [[TWMessageBarManager sharedInstance] showMessageWithTitle:systemNotiTitle
                                                        description:systemNoti
                                                               type:TWMessageBarMessageTypeError];
     }
+    
     
 }
-
+//=，=
 - (IBAction)find:(id)sender {
     char* name = (char *)[self.name.text UTF8String];
-    int nowNum = find(Queue, name);
-    NSString *systemNoti;
-    if (nowNum != 0) {
-        NSString *systemNotiTitle =[[NSString alloc] initWithFormat:@"%s 的队列位置", name];
-        if (nowNum - visited - 1 == 0) {
-            systemNoti = [[NSString alloc] initWithFormat:@"即将就诊，请稍事休息。"];
+    if (name[0]!='\0') {
+        int nowNum = find(Queue, name);
+        NSString *systemNoti;
+        if (nowNum != 0) {
+            NSString *systemNotiTitle =[[NSString alloc] initWithFormat:@"%s 的队列位置", name];
+            if (nowNum - visited - 1 == 0) {
+                systemNoti = [[NSString alloc] initWithFormat:@"即将就诊，请稍事休息。"];
+            }else{
+                systemNoti = [[NSString alloc] initWithFormat:@"前方有%d位患者等待就诊。", nowNum - visited - 1];
+            }
+            
+            [[TWMessageBarManager sharedInstance] showMessageWithTitle:systemNotiTitle
+                                                           description:systemNoti
+                                                                  type:TWMessageBarMessageTypeInfo];
         }else{
-            systemNoti = [[NSString alloc] initWithFormat:@"前方有%d位患者等待就诊。", nowNum - visited - 1];
+            NSString *systemNotiTitle =[[NSString alloc] initWithFormat:@"出错啦(屮눈皿눈)"];
+            NSString *systemNoti = [[NSString alloc] initWithFormat:@"查无此人诶！"];
+            [[TWMessageBarManager sharedInstance] showMessageWithTitle:systemNotiTitle
+                                                           description:systemNoti
+                                                                  type:TWMessageBarMessageTypeError];
         }
-        
-        [[TWMessageBarManager sharedInstance] showMessageWithTitle:systemNotiTitle
-                                                       description:systemNoti
-                                                              type:TWMessageBarMessageTypeInfo];
     }else{
-        NSString *systemNotiTitle =[[NSString alloc] initWithFormat:@"出错啦(屮눈皿눈)"];
-        NSString *systemNoti = [[NSString alloc] initWithFormat:@"查无此人诶！"];
+        NSString *systemNotiTitle = [[NSString alloc] initWithFormat:@"出错啦(艹皿艹 )"];
+        NSString *systemNoti = [[NSString alloc] initWithFormat:@"没输入名字呢！"];
         [[TWMessageBarManager sharedInstance] showMessageWithTitle:systemNotiTitle
                                                        description:systemNoti
                                                               type:TWMessageBarMessageTypeError];
     }
-    
 }
 
 - (IBAction)visit:(id)sender {
